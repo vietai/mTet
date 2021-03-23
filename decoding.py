@@ -126,7 +126,7 @@ def backtranslate_interactively(
           text += ' \\ ' + self.translated[tag]
         elif '\\' not in self.current_input and '\\' in text:
           text = text.split('\\')[0]
-        yield lib.fix_contents(text)
+        yield text_processing.fix_contents(text)
 
 
   helper = BackTranslateHelper()
