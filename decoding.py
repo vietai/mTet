@@ -24,7 +24,7 @@ from tensor2tensor.utils import trainer_lib
 from tensor2tensor.utils import usr_dir
 
 import tensorflow as tf
-import lib
+import text_processing
 
 flags = tf.flags
 FLAGS = flags.FLAGS
