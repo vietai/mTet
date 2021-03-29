@@ -77,76 +77,76 @@ Our data contains roughly 3.3 million pairs of texts. After augmentation, the da
 <tbody>
 <tr>
 <td>Fictional Books</td>
-<td>333,189</td>
-<td>2,516,787</td>
+<td style="text-align:right;">333,189</td>
+<td style="text-align:right;">2,516,787</td>
 </tr>
 
 <tr>
 <td>Legal Document</td>
-<td>1,150,266</td>
-<td>3,450,801</td>
+<td style="text-align:right;">1,150,266</td>
+<td style="text-align:right;">3,450,801</td>
 </tr>
 
 <tr>
 <td>Medical Publication</td>
-<td>5,861</td>
-<td>27,588</td>
+<td style="text-align:right;">5,861</td>
+<td style="text-align:right;">27,588</td>
 </tr>
 
 <tr>
 <td>Movies Subtitles</td>
-<td>250,000</td>
-<td>3,698,046</td>
+<td style="text-align:right;">250,000</td>
+<td style="text-align:right;">3,698,046</td>
 </tr>
 
 <tr>
 <td>Software</td>
-<td>79,912</td>
-<td>239,745</td>
+<td style="text-align:right;">79,912</td>
+<td style="text-align:right;">239,745</td>
 </tr>
 
 <tr>
 <td>TED Talk</td>
-<td>352,652</td>
-<td>4,983,294</td>
+<td style="text-align:right;">352,652</td>
+<td style="text-align:right;">4,983,294</td>
 </tr>
 
 <tr>
 <td>Wikipedia</td>
-<td>645,326</td>
-<td>1,935,981</td>
+<td style="text-align:right;">645,326</td>
+<td style="text-align:right;">1,935,981</td>
 </tr>
 
 <tr>
 <td>News</td>
-<td>18,449</td>
-<td>139,341</td>
+<td style="text-align:right;">18,449</td>
+<td style="text-align:right;">139,341</td>
 </tr>
 
 <tr>
 <td>Religious texts</td>
-<td>124,389</td>
-<td>1,182,726</td>
+<td style="text-align:right;">124,389</td>
+<td style="text-align:right;">1,182,726</td>
 </tr>
 
 
 <tr>
 <td>Educational content</td>
-<td>397,008</td>
-<td>8,475,342</td>
+<td style="text-align:right;">397,008</td>
+<td style="text-align:right;">8,475,342</td>
 </tr>
 
 
 <tr>
 <td>No tag</td>
-<td>5,517</td>
-<td>66,299</td>
+<td style="text-align:right;">5,517</td>
+<td style="text-align:right;">66,299</td>
 </tr>
 
 <tr>
 <td>Total</td>
-<td>3,362,569</td>
-<td>26,715,950</td>
+<td style="text-align:right;">3,362,569</td>
+<td style="text-align:right;">26,715,950</td>
 </tr>
 
 
