@@ -37,7 +37,7 @@ To train your model on the generated `tfrecords`
     --output_dir=$path_to_folder_to_save_checkpoints
 </prev>
 
-To run inference on the trained model.`
+To run inference on the trained model.
 
 <prev>
 
