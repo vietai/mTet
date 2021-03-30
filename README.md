@@ -10,11 +10,11 @@ By collecting high-quality data, we were able to train a model that outperforms 
 
 **English to Vietnamese Translation (BLEU score)**
 
-![img](envi.png)
+<img src="envi.png" alt="drawing" width="400"/>
 
 **Vietnamese to English Translation (BLEU score)**
 
-![img](vien.png)
+<img src="vien.png" alt="drawing" width="400"/>
 
 Visit our [blog post](https://ntkchinh.github.io/) for more details.
 
