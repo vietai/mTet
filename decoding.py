@@ -116,14 +116,15 @@ def backtranslate_interactively(
           print('Translated      :', text)
         
         # Fix the input to meet the translation model requirement:
-        if '\\' in self.current_input and ' \\ ' not in self.current_input:
-          input_text = self.current_input.split('\\')[0].strip()
-          tag = self.current_input.split('\\')[1].strip()
-          self.current_input =  input_text + ' \\ ' + tag
+        # if '\\' in self.current_input and ' \\ ' not in self.current_input:
+        #   input_text = self.current_input.split('\\')[0].strip()
+        #   tag = self.current_input.split('\\')[1].strip()
+        #   self.current_input =  input_text + ' \\ ' + tag
 
         if ' \\ ' in self.current_input and ' \\ ' not in text:
           tag = self.current_input.split('\\')[1].strip()
-          text += ' \\ ' + self.translated[tag]
+          if tag in self.translated:
+            text += ' \\ ' + self.translated[tag]
         elif '\\' not in self.current_input and '\\' in text:
           text = text.split('\\')[0]
         yield text_processing.fix_contents(text)
