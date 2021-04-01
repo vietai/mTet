@@ -178,6 +178,8 @@ def decode_interactively(estimator,
         ids = inputs_vocab.encode(line.strip()) + [1]
       else:
         ids = targets_vocab.encode(line)
+      
+      print(length, ids)
       if len(ids) < length:
         ids.extend([0] * (length - len(ids)))
       else:
