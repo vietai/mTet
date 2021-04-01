@@ -101,7 +101,7 @@ def backtranslate_interactively(
           input_text = input_text.split(' \\')[0] + ' \\ TED'
 
         self.current_input = input_text
-        yield input_text
+        yield text_processing.fix_contents(input_text)
 
     def intermediate_lang_processor(self, intermediate_lang):
       for text in intermediate_lang:
