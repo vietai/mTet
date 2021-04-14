@@ -54,8 +54,17 @@ tf.flags.DEFINE_boolean(
     'Whether to back-translate interactively.')
 
 FLAGS = tf.flags.FLAGS
-  
 
+
+@registry.register_hparams
+def transformer_tall9():
+  hparams = transformer.transformer_big()
+  hparams.hidden_size = 768
+  hparams.filter_size = 3072
+  hparams.num_hidden_layers = 9
+  hparams.num_heads = 12
+  return hparams
+  
 
 if __name__ == '__main__':
   tf.logging.set_verbosity(tf.logging.INFO)

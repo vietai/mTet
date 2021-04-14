@@ -14,6 +14,7 @@ from tensor2tensor.utils import registry
 flags = tf.flags
 FLAGS = flags.FLAGS
 
+
 @registry.register_hparams
 def transformer_tall9():
   hparams = transformer.transformer_big()
@@ -22,6 +23,7 @@ def transformer_tall9():
   hparams.num_hidden_layers = 9
   hparams.num_heads = 12
   return hparams
+
 
 if __name__ == '__main__':
   tf.logging.set_verbosity(tf.logging.INFO)
