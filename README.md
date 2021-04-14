@@ -16,7 +16,7 @@ By collecting high-quality data, we were able to train a model that outperforms 
 
 <img src="vien.png" alt="drawing" width="500"/>
 
-Visit our [blog post](https://ntkchinh.github.io/) for more details.
+Visit our [blog post](https://blog.vietai.org/sat/) for more details.
 
 <br>
 
