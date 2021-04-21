@@ -1,6 +1,6 @@
 # SAT
 
-## Styled Augmented Translation
+## Style Augmented Translation
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/better-translation-for-vietnamese/machine-translation-on-iwslt2015-english-1)](https://paperswithcode.com/sota/machine-translation-on-iwslt2015-english-1?p=better-translation-for-vietnamese)
 
