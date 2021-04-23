@@ -14,7 +14,6 @@ from tensor2tensor.utils import registry
 flags = tf.flags
 FLAGS = flags.FLAGS
 
-
 @registry.register_hparams
 def transformer_tall9():
   hparams = transformer.transformer_big()

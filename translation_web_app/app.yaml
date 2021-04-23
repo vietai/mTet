@@ -1,0 +1,9 @@
+runtime: custom
+env: flex
+
+# manual_scaling:
+#   instances: 1
+# instance_class: F1
+# automatic_scaling:
+#   max_instances: 2 
+#   min_instances: 0 

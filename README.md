@@ -9,8 +9,6 @@
 
 By collecting high-quality data, we were able to train a model that outperforms Google Translate on 6 different domains of English-Vietnamese Translation. 
 
-Get data and model at [Google Cloud Storage](https://console.cloud.google.com/storage/browser/vietai_public/best_vi_translation)
-  
 **English to Vietnamese Translation (BLEU score)**
 
 <img src="envi.png" alt="drawing" width="500"/>
@@ -18,6 +16,10 @@ Get data and model at [Google Cloud Storage](https://console.cloud.google.com/st
 **Vietnamese to English Translation (BLEU score)**
 
 <img src="vien.png" alt="drawing" width="500"/>
+
+Get data and model at [Google Cloud Storage](https://console.cloud.google.com/storage/browser/vietai_public/best_vi_translation)
+
+Check out our [demo web app](https://demo.vietai.org/)
 
 Visit our [blog post](https://blog.vietai.org/sat/) for more details.
 
