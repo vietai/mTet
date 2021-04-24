@@ -397,7 +397,7 @@ st.markdown(
 )
 
 
-file_ = open("cut_web_logo.png", "rb")
+file_ = open("Translation-image-02.png", "rb")
 contents = file_.read()
 data_url = base64.b64encode(contents).decode("utf-8")
 file_.close()
