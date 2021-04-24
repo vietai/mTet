@@ -1,0 +1,6 @@
+requests==2.25.1
+tensorflow==2.4.1
+streamlit==0.76.0
+google_api_python_client==1.12.8
+protobuf==3.14.0
+google_cloud_firestore
