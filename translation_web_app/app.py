@@ -17,8 +17,11 @@ import googleapiclient.discovery
 from google.api_core.client_options import ClientOptions
 
 from google.cloud import firestore
-
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "vietai-research-8be1f340424d.json" # change for your GCP key
+gg_api_credential = 'vietai-research-mlmodel.json'
+if os.path.exists(gg_api_credential):
+  os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = gg_api_credential # change for your GCP key
+else:
+  os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ''
 
 PROJECT = "vietai-research" # change for your GCP project
 REGION = "asia-southeast1" # change for your GCP region (where your model is hosted)
@@ -56,6 +59,8 @@ def to_example(dictionary):
 
 
 def get_resource(version):
+    if os.environ["GOOGLE_APPLICATION_CREDENTIALS"] == '':
+      return None, None
     # Create the ML Engine service object
     prefix = "{}-ml".format(REGION) if REGION else "ml"
     api_endpoint = "https://{}.googleapis.com".format(prefix)
@@ -276,8 +281,11 @@ def write_ui():
   else:
     state.from_txt = state.from_txt.replace('\n', ' ')
     normalized = normalize(state.from_txt)
-    state.text_to_show = translate(
-        normalized, state.direction_choice)
+    if state.model is None or state.model_path is None:
+      state.text_to_show = 'Google Cloud Platform access is currently disabled. This is a dummy translation.'
+    else:  
+      state.text_to_show = translate(
+          normalized, state.direction_choice)
   
   state.text_to_show = join_multiple_https(
       state.from_txt,
@@ -315,23 +323,24 @@ def write_ui():
       state.ph1.empty()
       state.ph2.empty()
       state.ph3.empty()
-      st.success('Thank you :)')
-      state.db = firestore.Client.from_service_account_json("vietai-research-firebase-adminsdk.json")
-        
-      if state.direction_choice == "English to Vietnamese":
-        state.db.collection(u"envi").add({
-            u'from_text': state.from_txt,
-            u'model_output': state.text_to_show,
-            u'user_approve': True,
-            u'time': time.time()
-        })
+      if state.db is None:
+        st.success('Google Cloud Platform access is currently disabled. Suggestions will be recorded once access is enabled.')
       else:
-        state.db.collection(u"vien").add({
-            u'from_text': state.from_txt,
-            u'model_output': state.text_to_show,
-            u'user_approve': True,
-            u'time': time.time()
-        })
+        if state.direction_choice == "English to Vietnamese":
+          state.db.collection(u"envi").add({
+              u'from_text': state.from_txt,
+              u'model_output': state.text_to_show,
+              u'user_approve': True,
+              u'time': time.time()
+          })
+        else:
+          state.db.collection(u"vien").add({
+              u'from_text': state.from_txt,
+              u'model_output': state.text_to_show,
+              u'user_approve': True,
+              u'time': time.time()
+          })
+        st.success('Thank you :)')
 
     elif state.b3:
       state.like = False
@@ -352,23 +361,24 @@ def write_ui():
         
         state.submit = False
         # Save Users contribution:
-        state.db = firestore.Client.from_service_account_json("vietai-research-firebase-adminsdk.json")
-        
-        if state.direction_choice == "English to Vietnamese":
-          state.db.collection(u"envi").add({
-              u'from_text': state.from_txt,
-              u'model_output': state.text_to_show,
-              u'user_translation': state.user_edit,
-              u'time': time.time()
-          })
+        if state.db is not None:
+          if state.direction_choice == "English to Vietnamese":
+            state.db.collection(u"envi").add({
+                u'from_text': state.from_txt,
+                u'model_output': state.text_to_show,
+                u'user_translation': state.user_edit,
+                u'time': time.time()
+            })
+          else:
+            state.db.collection(u"vien").add({
+                u'from_text': state.from_txt,
+                u'model_output': state.text_to_show,
+                u'user_translation': state.user_edit,
+                u'time': time.time()
+            })
+          st.success("Your suggestion was recorded. Thank you :)")
         else:
-          state.db.collection(u"vien").add({
-              u'from_text': state.from_txt,
-              u'model_output': state.text_to_show,
-              u'user_translation': state.user_edit,
-              u'time': time.time()
-          })
-        st.success("Your suggestion was recorded. Thank you :)")
+          st.success("Google Cloud Platform access is currently disabled. Suggestions will be recorded once access is enabled.")
         
         state.user_edit = state.ph0.text_area(
                     'Translated text',
@@ -419,12 +429,18 @@ directions = ['English to Vietnamese',
 
 state = SessionState.get(like=False, submit=False, first_time=True, prev_choice=None)
 
+
+firebase_credential_json = "vietai-research-firebase-adminsdk.json"
+if os.path.exists(firebase_credential_json):
+  state.db = firestore.Client.from_service_account_json(firebase_credential_json)
+else:
+  state.db = None
+
 state.direction_choice = st.selectbox('Direction', directions)
 
 
 @st.cache(allow_output_mutation=True)
 def init(direction_choice):
-
   if state.direction_choice == "English to Vietnamese":
     return (get_resource('envi_pure_tall9'), 
             'Welcome to the best ever translation project for Vietnamese !')

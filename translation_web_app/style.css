@@ -4,47 +4,24 @@ h1 {
     width: justify;
     text-align: justify;
 }
-/* body {
-    color: #ffffff;
-    height: justify;
-    width: justify;
-    text-align: justify; */
-    /* background-color: #4F8BF9;
-    /* } */ 
 
 .stButton>button {
     display: inline-block;
     background: rgba(224, 230, 236, 0.75);
-    /* padding: 4px 8px; */
     border-radius: none;
     font-size: 15px!important;
     text-decoration: blink;
     color: rgb(50, 50, 53);
-    /* border: none; */
-    /* font-weight: 500; */
     border: solid 2px rgba(32, 100, 89, 0.08);
     border-bottom-color: rgba(207, 189, 189, 0.15);
-    /* text-transform: uppercase; */
     line-height: 16px;
     } 
-    /* #css-2trqyj.edgvbvh1 {
-    background-image: url(https://raw.githubusercontent.com/ntkchinh/ntkchinh.github.io/master/colab.svg);
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position-y: 2px;
-    display: inline-block;
-    padding-left: 24px;
-    border-radius: 4px;
-    text-decoration: none; */
-    /* } */
   
   button:active {
     background: #DDDDDD;
     color: #222222;
     border-bottom: 0;
-    /* box-shadow: 0 3px #555555; */
     margin-top: 2px;
-    /* display:block; */
     }
 
 
@@ -53,5 +30,4 @@ h1 {
     height: justify;
     width: justify;
     text-align: justify;
-    /* #708090; */
 }
