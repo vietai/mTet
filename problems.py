@@ -46,7 +46,7 @@ class TranslateClass11PureVienIwslt32k(translate_envi.TranslateEnviIwslt32k):
 
   def source_data_files(self, dataset_split):
     train = dataset_split == translate_envi.problem.DatasetSplit.TRAIN
-    return ['', ('train.vi', 'train.en')]] if train else [['',('tst2012.vi', 'tst2012.en')]]
+    return [['', ('train.vi', 'train.en')]] if train else [['',('tst2012.vi', 'tst2012.en')]]
 
 
 @registry.register_problem
@@ -59,4 +59,4 @@ class TranslateClass11PureEnviIwslt32k(translate_envi.TranslateEnviIwslt32k):
 
   def source_data_files(self, dataset_split):
     train = dataset_split == translate_envi.problem.DatasetSplit.TRAIN
-    return ['', ('train.en', 'train.vi')]] if train else [['',('tst2012.en', 'tst2012.vi')]]
+    return [['', ('train.en', 'train.vi')]] if train else [['',('tst2012.en', 'tst2012.vi')]]
