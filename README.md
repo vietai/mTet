@@ -59,7 +59,8 @@ To run inference on the trained model:
     --problem=$problem \
     --hparams_set=$hparams_set \
     --model=transformer \
-    --output_dir=$path_to_folder_contains_checkpoints
+    --output_dir=$path_to_folder_contains_checkpoints \
+    --checkpoint_path=$path_to_checkpoint
 </prev>
 
 In [this colab](https://colab.research.google.com/drive/1iYjm2E_iMb5qHfrdR5iQF_jq-BwC-DFM?usp=sharing), we demonstrated how to run these three phases in the context of hosting data/model on Google Cloud Storage.
