@@ -69,14 +69,14 @@ In [this colab](https://colab.research.google.com/drive/1LH4wO7LcrklrUGwaMdLlXpJ
 
 ### Dataset
 
-Our data contains roughly 4.2 million pairs of texts. After augmentation, the data is of size 26.7 million pairs of texts. A more detail breakdown of our data is shown in the table below.
+Our data contains roughly 4.2 million pairs of texts, ranging across multiple different domains such as medical publications, religious texts, engineering articles, literature, news, and poems. A more detail breakdown of our data is shown in the table below.
 
 <table align="center">
 <thead>
 <tr>
 <th></th>
-<th>Pure</th>
-<th>Augmented</th>
+<th>v1</th>
+<th>v2 (MTet)</th>
 </tr>
 </thead>
 
@@ -84,75 +84,75 @@ Our data contains roughly 4.2 million pairs of texts. After augmentation, the da
 <tr>
 <td>Fictional Books</td>
 <td style="text-align:right;">333,189</td>
-<td style="text-align:right;">2,516,787</td>
+<td style="text-align:right;">473,306</td>
 </tr>
 
 <tr>
 <td>Legal Document</td>
 <td style="text-align:right;">1,150,266</td>
-<td style="text-align:right;">3,450,801</td>
+<td style="text-align:right;">1,134,813</td>
 </tr>
 
 <tr>
 <td>Medical Publication</td>
 <td style="text-align:right;">5,861</td>
-<td style="text-align:right;">27,588</td>
+<td style="text-align:right;">13,410</td>
 </tr>
 
 <tr>
 <td>Movies Subtitles</td>
 <td style="text-align:right;">250,000</td>
-<td style="text-align:right;">3,698,046</td>
+<td style="text-align:right;">721,174</td>
 </tr>
 
 <tr>
 <td>Software</td>
 <td style="text-align:right;">79,912</td>
-<td style="text-align:right;">239,745</td>
+<td style="text-align:right;">79,132</td>
 </tr>
 
 <tr>
 <td>TED Talk</td>
 <td style="text-align:right;">352,652</td>
-<td style="text-align:right;">4,983,294</td>
+<td style="text-align:right;">303,131</td>
 </tr>
 
 <tr>
 <td>Wikipedia</td>
 <td style="text-align:right;">645,326</td>
-<td style="text-align:right;">1,935,981</td>
+<td style="text-align:right;">1,094,248</td>
 </tr>
 
 <tr>
 <td>News</td>
 <td style="text-align:right;">18,449</td>
-<td style="text-align:right;">139,341</td>
+<td style="text-align:right;">18,389</td>
 </tr>
 
 <tr>
 <td>Religious texts</td>
 <td style="text-align:right;">124,389</td>
-<td style="text-align:right;">1,182,726</td>
+<td style="text-align:right;">48,927</td>
 </tr>
 
 
 <tr>
 <td>Educational content</td>
 <td style="text-align:right;">397,008</td>
-<td style="text-align:right;">8,475,342</td>
+<td style="text-align:right;">213,284</td>
 </tr>
 
 
 <tr>
 <td>No tag</td>
 <td style="text-align:right;">5,517</td>
-<td style="text-align:right;">66,299</td>
+<td style="text-align:right;">63,896</td>
 </tr>
 
 <tr>
 <td>Total</td>
 <td style="text-align:right;">3,362,569</td>
-<td style="text-align:right;">26,715,950</td>
+<td style="text-align:right;">4,163,710</td>
 </tr>
 
 
