@@ -11,15 +11,15 @@
 
 We are excited to introduce a new larger and better quality Machine Translation dataset, **MTet**, which stands for **M**ulti-domain **T**ranslation for **E**nglish and Vie**T**namese. In our new release, we extend our previous dataset ([v1.0](https://github.com/vietai/SAT/releases/tag/v1.0)) by adding more high-quality English-Vietnamese sentence pairs on various domains. In addition, we also show our new larger Transformer models can achieve state-of-the-art results on multiple test sets.
 
-**English to Vietnamese Translation (BLEU score)**
+<!-- **English to Vietnamese Translation (BLEU score)**
 
 <img src="envi.png" alt="drawing" width="500"/>
 
 **Vietnamese to English Translation (BLEU score)**
 
-<img src="vien.png" alt="drawing" width="500"/>
+<img src="vien.png" alt="drawing" width="500"/> -->
 
-Get data and model at [Google Cloud Storage](https://console.cloud.google.com/storage/browser/vietai_public/best_vi_translation)
+Get data and model at [Google Cloud Storage](https://console.cloud.google.com/storage/browser/vietai_public/best_vi_translation/v2)
 
 Visit our [blog post](https://blog.vietai.org/sat/) for more details.
 
@@ -63,7 +63,7 @@ To run inference on the trained model:
     --checkpoint_path=$path_to_checkpoint
 </prev>
 
-In [this colab](https://colab.research.google.com/drive/1iYjm2E_iMb5qHfrdR5iQF_jq-BwC-DFM?usp=sharing), we demonstrated how to run these three phases in the context of hosting data/model on Google Cloud Storage.
+In [this colab](https://colab.research.google.com/drive/1LH4wO7LcrklrUGwaMdLlXpJJcu2opGK6?usp=sharing), we demonstrated how to run these three phases in the context of hosting data/model on Google Cloud Storage.
 
 <br>
 
