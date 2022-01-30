@@ -9,7 +9,7 @@
 
 ### Introduction
 
-By collecting high-quality data, we were able to train a model that outperforms Google Translate on 6 different domains of English-Vietnamese Translation. 
+We are excited to introduce a new larger and better quality Machine Translation dataset, **MTet**, which stands for **M**ulti-domain **T**ranslation for **E**nglish and Vie**T**namese. In our new release, we extend our previous dataset ([v1.0](https://github.com/vietai/SAT/releases/tag/v1.0)) by adding more high-quality English-Vietnamese sentence pairs on various domains. In addition, we also show our new larger Transformer models can achieve state-of-the-art results on multiple test sets.
 
 **English to Vietnamese Translation (BLEU score)**
 
@@ -20,8 +20,6 @@ By collecting high-quality data, we were able to train a model that outperforms 
 <img src="vien.png" alt="drawing" width="500"/>
 
 Get data and model at [Google Cloud Storage](https://console.cloud.google.com/storage/browser/vietai_public/best_vi_translation)
-
-Check out our [demo web app](https://demo.vietai.org/)
 
 Visit our [blog post](https://blog.vietai.org/sat/) for more details.
 
@@ -71,7 +69,7 @@ In [this colab](https://colab.research.google.com/drive/1iYjm2E_iMb5qHfrdR5iQF_j
 
 ### Dataset
 
-Our data contains roughly 3.3 million pairs of texts. After augmentation, the data is of size 26.7 million pairs of texts. A more detail breakdown of our data is shown in the table below.
+Our data contains roughly 4.2 million pairs of texts. After augmentation, the data is of size 26.7 million pairs of texts. A more detail breakdown of our data is shown in the table below.
 
 <table align="center">
 <thead>
