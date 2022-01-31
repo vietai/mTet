@@ -24,6 +24,14 @@ def transformer_tall9():
   return hparams
 
 
+@registry.register_hparams
+def transformer_tall_18_18():
+  hparams = transformer.transformer_tall9()
+  hparams.num_encoder_layers = 18
+  hparams.num_decoder_layers = 18
+  return hparams
+
+
 if __name__ == '__main__':
   tf.logging.set_verbosity(tf.logging.INFO)
   # tf.app.run(t2t_decoder.main)
