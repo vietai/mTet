@@ -19,6 +19,14 @@ def transformer_tall9():
   hparams.num_hidden_layers = 9
   hparams.num_heads = 12
   return hparams
+
+@registry.register_hparams
+def transformer_tall_18_18():
+  hparams = transformer.transformer_tall9()
+  hparams.num_encoder_layers = 18
+  hparams.num_decoder_layers = 18
+  return hparams
+
   
 
 if __name__ == '__main__':
