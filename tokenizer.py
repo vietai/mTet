@@ -305,8 +305,12 @@ def unfix_contents(contents):
 
 
 def unfix_file(fname):
-    org_place = os.getcwd() + '/'
-    saving_place = os.getcwd() + '/'
+    if not fname.startswith(os.getcwd()):
+      org_place = os.getcwd() + '/'
+      saving_place = os.getcwd() + '/'
+    else:
+      org_place = ''
+      saving_place = ''
 
     if not os.path.exists(saving_place + fname + '.unfix'):
         print('unfixing ', fname)
@@ -319,4 +323,4 @@ def unfix_file(fname):
 
         return fname + '.unfix'
     else:
-        print('already done')
+        print('Already done!')
