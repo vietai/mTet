@@ -22,7 +22,7 @@ def transformer_tall9():
 
 @registry.register_hparams
 def transformer_tall_18_18():
-  hparams = transformer.transformer_tall9()
+  hparams = transformer_tall9()
   hparams.num_encoder_layers = 18
   hparams.num_decoder_layers = 18
   return hparams
