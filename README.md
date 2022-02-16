@@ -160,7 +160,7 @@ Our data contains roughly 4.2 million pairs of texts, ranging across multiple di
 
 </br>
 
-Data sources is described in more details [here](https://github.com/vietai/SAT/blob/main/scrape_sources.txt).
+Data sources is described in more details [here](https://github.com/vietai/SAT/blob/main/data_distribution.txt).
 
 ### Acknowledgment
 We would like to thank Google for the support of Cloud credits and TPU quota!
