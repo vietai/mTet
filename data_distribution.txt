@@ -1,19 +1,19 @@
                     DATA DISTRIBUTION
 
 DOMAIN WISE
-    Medical Publication	        13,410
-    News	                      18,389
-    Religious texts	            48,927
-    Miscellaneous	              63,896
-    Software	                  79,132
-    Educational content	       213,284
-    TED Talk	                 303,131
-    Fictional Books	           473,306
-    Movies Subtitles	         721,174
-    Wikipedia	               1,094,248
-    Legal Document	         1,134,813
-                     -----------------
-    TOTAL	                   4,163,710
+    Medical Publication          13,410
+    News                         18,389
+    Religious texts              48,927
+    Miscellaneous                63,896
+    Software                     79,132
+    Educational content         213,284
+    TED Talk                    303,131
+    Fictional Books             473,306
+    Movies Subtitles            721,174
+    Wikipedia                 1,094,248
+    Legal Document            1,134,813
+                      -----------------
+    TOTAL                     4,163,710
 
 RESOURCE WISE 
     Data sources come from the following three categories:
