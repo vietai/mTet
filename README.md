@@ -19,7 +19,7 @@ We are excited to introduce a new larger and better quality Machine Translation 
 
 <img src="vien.png" alt="drawing" width="500"/> -->
 
-<!-- Get data and model at [Google Cloud Storage](https://console.cloud.google.com/storage/browser/vietai_public/best_vi_translation/v2) -->
+Get data and model at [Google Cloud Storage](https://console.cloud.google.com/storage/browser/vietai_public/best_vi_translation/v2)
 
 Visit our [blog post](http://translate.vietai.org/) for more details.
 
