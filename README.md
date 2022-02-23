@@ -4,7 +4,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/better-translation-for-vietnamese/machine-translation-on-iwslt2015-english-1)](https://paperswithcode.com/sota/machine-translation-on-iwslt2015-english-1?p=better-translation-for-vietnamese)
 
 ### Release
-- [v2.0 (Current)](https://github.com/vietai/SAT)
+- [v2.0 (Current)](https://github.com/vietai/mTet)
 - [v1.0](https://github.com/vietai/SAT/releases/tag/v1.0)
 
 ### Introduction
@@ -21,7 +21,7 @@ We are excited to introduce a new larger and better quality Machine Translation 
 
 <!-- Get data and model at [Google Cloud Storage](https://console.cloud.google.com/storage/browser/vietai_public/best_vi_translation/v2) -->
 
-Visit our [blog post](https://blog.vietai.org/sat/) for more details.
+Visit our [blog post](http://translate.vietai.org/) for more details.
 
 <br>
 
