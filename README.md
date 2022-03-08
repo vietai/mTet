@@ -1,7 +1,7 @@
 # MTet: Multi-domain Translation for English-Vietnamese
 
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/better-translation-for-vietnamese/machine-translation-on-iwslt2015-english-1)](https://paperswithcode.com/sota/machine-translation-on-iwslt2015-english-1?p=better-translation-for-vietnamese)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mtet-multi-domain-translation-for-english/machine-translation-on-iwslt2015-english-1)](https://paperswithcode.com/sota/machine-translation-on-iwslt2015-english-1?p=mtet-multi-domain-translation-for-english)
 
 ### Release
 - [v2.0 (Current)](https://github.com/vietai/mTet)
