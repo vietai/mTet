@@ -17,53 +17,52 @@ DOMAIN WISE
 
 RESOURCE WISE 
     Data sources come from the following three categories:
-        1. Available parallel corpuses (~1.8M pairs)
-            http://www.opensubtitles.org/
-            TED2020v1: https://arxiv.org/abs/2004.09813
-            https://tatoeba.org/eng/
-            https://github.com/christos-c/bible-corpus
-            https://l10n.gnome.org/
-            KDE4: https://opus.nlpl.eu/KDE4-v2.php
+        1. Available parallel corpuses 
+            OpenSubtitle,WikiMatrix,Bible-Uedin, Qed, KDE4, Gnome,Ubuntu,Tatoeba,TED2020v1,ELRC: https://opus.nlpl.eu/
 
-        2. Scrape from the internet: (~1.8M pairs)
-            https://vietanhsongngu.com
-            https://baosongngu.com/
-            https://thuvienphapluat.vn
-            https://sachsongngu.top/
-            http://vbpl.vn/pages/portal.aspx
-            https://yhoctphcm.ump.edu.vn/
-            http://jmp.huemed-univ.edu.vn/home
-            http://tonghoiyhoc.vn/
-            http://automation.net/
-            http://tapchixaydungbxd.vn/
-            https://duytan.edu.vn/tap-chi-khoa-hoc-cong-nghe
-            https://tapchikhcn.haui.edu.vn/vn
-            https://sj.ctu.edu.vn/ql/docgia
-            https://tapchivatuyentap.tlu.edu.vn/
-            http://tapchimoitruong.vn/
-            http://hoinhikhoavn.com/
-            http://hoiyhoctphcm.org.vn/
-            https://jns.vn/
-            https://jprp.vn/index.php/JPRP/index
-            http://hocvienquany.edu.vn/Tapchi_YDHQS/Portal/TrangChu.html
-            https://radiology.com.vn/
-            https://sinhlyhoc.com.vn/
-            https://tapchinghiencuuyhoc.vn/index.php/tcncyh
-            http://tapchi.vienbongquocgia.vn/Portal/TrangChu.html
-            http://vienduoclieu.org.vn/tap-chi
-            https://vjpm.vn/index.php/vjpm
-            http://vjfc.nifc.gov.vn/
-            https://vjs.ac.vn/index.php/vjbt/issue/archive
-            http://vutm.edu.vn/
-            https://jcmhch.com/Tapchi
-            http://www.yhth.vn/ 
-            https://ted2srt.org/
-            https://translations.launchpad.net/
-            https://elrc-share.eu/repository/browse/covid-19-health-wikipedia-dataset-multilingual-53-en-x-language-pairs/fe23e2c28c8311ea913100155d0267066f62c6b30ac0429f8d497df0abd2ef72/
-            https://translationproject.org/html/welcome.html
-            https://issuu.com/magiimaa/docs/
-            https://lyricstranslate.com/en/language/vietnamese
-            https://www.wikihow.com/
+        2. Scrape from the internet:
+            Websites for Medical data:
+                https://yhoctphcm.ump.edu.vn
+                http://jmp.huemed-univ.edu.vn
+                http://tonghoiyhoc.vn
+                http://hoinhikhoavn.com
+                http://hoiyhoctphcm.org.vn
+                https://jns.vn
+                https://jprp.vn
+                http://hocvienquany.edu.vn
+                https://sinhlyhoc.com.vn
+                https://tapchinghiencuuyhoc.vn
+                http://tapchi.vienbongquocgia.vn
+                http://vienduoclieu.org.vn
+                https://vjpm.vn
+                http://vjfc.nifc.gov.vn
+                https://vjs.ac.vn
+                http://vutm.edu.vn
+                https://jcmhch.com
+                http://www.yhth.vn
+                https://sj.ctu.edu.vn
+                https://radiology.com.vn
+                https://vjol.info.vn
+                http://www.vjph.vn
+
+            Others websites:
+                https://vietanhsongngu.com
+                https://baosongngu.com
+                https://sachsongngu.top
+                https://thuvienphapluat.vn
+                http://vbpl.vn
+                http://automation.net
+                http://tapchixaydungbxd.vn
+                https://duytan.edu.vn
+                https://tapchikhcn.haui.edu.vn
+                https://tapchivatuyentap.tlu.edu.vn
+                http://tapchimoitruong.vn
+                https://translations.launchpad.net
+                https://translationproject.org
+                https://issuu.com/
+                https://lyricstranslate.com
+                https://www.wikihow.com
+                https://d2l.aivivn.com (for 2 books: 'Dive in to Deep Learning' & 'Machine Learning Yearning')
 
             Subtitles from the following channels on Youtube:
                 - Khan Academy 
@@ -74,13 +73,12 @@ RESOURCE WISE
                 - Veritasium
                 - Vsauce
 
-        3. Book downloads and aligned at paragraph-level from: (~500K pairs)
-            https://www.dtv-ebook.com/
-            https://www.pdfdrive.com/
-            https://vn1lib.org/
-            https://trinhdinhlinh.com/sach/
-            https://sachvui.vn/
-            https://d2l.aivivn.com/ (for 2 books: 'Dive in to Deep Learning' & 'Machine Learning Yearning')
-
+        3. Book downloads and aligned at paragraph-level from
+            https://www.dtv-ebook.com
+            https://www.pdfdrive.com
+            https://vn1lib.org
+            https://trinhdinhlinh.com
+            https://sachvui.vn
+            
         The paragraph-aligning algorithm is described here:
         https://github.com/vietai/SAT/blob/main/dp_algorithm.md
