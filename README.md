@@ -23,7 +23,7 @@ We are excited to introduce a new larger and better quality Machine Translation 
 
 Get data and model at [Google Cloud Storage](https://console.cloud.google.com/storage/browser/vietai_public/best_vi_translation/v2)
 
-Visit our [blog post](http://translate.vietai.org/) for more details.
+Visit our  📄 [paper](https://arxiv.org/abs/2210.05610) or 📝 [blog post](https://research.vietai.org/mtet/) for more details.
 
 <br>
 
