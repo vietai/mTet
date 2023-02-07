@@ -36,6 +36,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 model_name = "VietAI/envit5-translation"
 tokenizer = AutoTokenizer.from_pretrained(model_name)  
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+model.cuda()
 
 inputs = [
     "vi: VietAI là tổ chức phi lợi nhuận với sứ mệnh ươm mầm tài năng về trí tuệ nhân tạo và xây dựng một cộng đồng các chuyên gia trong lĩnh vực trí tuệ nhân tạo đẳng cấp quốc tế tại Việt Nam.",
